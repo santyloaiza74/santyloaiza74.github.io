@@ -1,0 +1,26 @@
+.bg-primary{
+    background-color: black !important;
+}
+.text-secondary{
+    color: black !important;
+}
+body{
+    background-color: #ecf0f1;
+    line-height: 1.7;
+}
+img{
+    max-width: 50%;
+    height: auto;
+}
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+.progress{
+    background-color: rgba(250, 255, 255, 0.2);
+    border-radius: 20px ;
+    overflow: hidden;
+}
+.card:hover{
+    transform: scale(1.02);
+    transition: 0.3s;
+}
