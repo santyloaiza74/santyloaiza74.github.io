@@ -1,26 +1,93 @@
-.bg-primary{
-    background-color: black !important;
+body {
+  background: linear-gradient(135deg, #1c1f2b, #343853);
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
 }
-.text-secondary{
-    color: black !important;
+
+/* --- Columna izquierda (perfil) --- */
+.profile-column {
+  background: linear-gradient(180deg, #0d0d0d, #1f1f1f);
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.4);
+  border-right: 3px solid #ffc107;
 }
-body{
-    background-color: #ecf0f1;
-    line-height: 1.7;
+
+.name-title {
+  color: #ffc107;
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-shadow: 0 0 10px rgba(255, 193, 7, 0.4);
 }
-img{
+
+.section-title {
+  color: #ffc107;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.section-divider {
+  border: none;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  margin-bottom: 10px;
+}
+
+.text-accent {
+  color: #ffc107;
+}
+
+.bg-accent {
+  background-color: #ffc107 !important;
+}
+
+/* --- Habilidades --- */
+.progress {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 8px;
+}
+
+.skill span {
+  font-size: 0.9rem;
+}
+
+/* --- Imagen --- */
+img {
+  max-width: 65%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* --- Tarjetas y efectos --- */
+.card {
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Enlaces --- */
+a:hover {
+  text-decoration: underline;
+  color: #ffc107 !important;
+}
+
+/* --- Responsivo --- */
+@media (max-width: 768px) {
+  .name-title {
+    font-size: 1.5rem;
+  }
+
+  img {
     max-width: 50%;
-    height: auto;
+  }
 }
-*{
-    font-family: 'Montserrat', sans-serif;
-}
-.progress{
-    background-color: rgba(250, 255, 255, 0.2);
-    border-radius: 20px ;
-    overflow: hidden;
-}
-.card:hover{
-    transform: scale(1.02);
-    transition: 0.3s;
+section h5 {
+  border-bottom: 2px solid #ffc107;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
 }
